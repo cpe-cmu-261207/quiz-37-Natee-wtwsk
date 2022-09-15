@@ -13,7 +13,7 @@ export default function PostOwner(props) {
         />
         <span className="fw-semibold fs-5">Natee Wittwawtskul 630610742</span>
       </div>
-      <span>Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207</span>
+      <span>ไอ้ห่า ห้อง319 แม่งเจาะห้องทั้งวันเลยเว้ย #เสียงบรรเลงของสว่านที่เชียงใหม่</span>
       <div className="d-flex align-items-center gap-1">
         <img src="/like.svg" width={20}></img>
         <span className="text-muted">100 คน</span>

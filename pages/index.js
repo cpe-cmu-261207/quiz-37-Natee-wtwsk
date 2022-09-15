@@ -15,8 +15,8 @@ export default function Home() {
         className="mx-auto bg-white p-3 rounded rounded-3 shadow-sm"
       >
         <PostOwner />
-        <Comment />
-        <Reply />
+        { comments.map((i) => <Comment index={i} /> )}
+        
       </div>
     </div>
   );
