@@ -19,6 +19,12 @@ export default function Reply(props) {
         <span className="fw-semibold">{ replyIndex.username }</span>
         <br />
         <span>{ replyIndex.replyText }</span>
+        { replyIndex.likeNum > 0 && 
+              <div className="d-flex align-items-center gap-1">
+                <img src="/like.svg" width={20}></img>
+                <span className="text-muted">{ replyIndex.likeNum } คน</span>
+              </div>
+            }
       </div>
     </div>
   );
