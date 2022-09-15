@@ -3,8 +3,7 @@ import { comments } from "../libs/comments";
 import Reply from "./Reply";
 
 export default function Comment(props) {
-  const index = props;
-  console.log(index);
+  const { index } = props;
   return (
     <div>
       <div className="d-flex gap-2 my-2">
@@ -22,7 +21,7 @@ export default function Comment(props) {
             <span className="fw-semibold">{ index.username }</span>
             <br />
             <span>{ index.commentText }</span>
-            {index.likenum && 
+            { index.likeNum > 0 && 
               <div className="d-flex align-items-center gap-1">
                 <img src="/like.svg" width={20}></img>
                 <span className="text-muted">{ index.likeNum } คน</span>
@@ -30,7 +29,7 @@ export default function Comment(props) {
             }
           </div>
       </div>
-      { comments.replies.map((j) => <Reply replyIndex={j} /> )}
+      { index.replies.map((j) => <Reply replyIndex={j} /> )}
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Reply(props) {
-  const replyIndex = props;
+  const { replyIndex } = props;
 
   return (
     <div className="d-flex gap-2 my-2 ps-5">
